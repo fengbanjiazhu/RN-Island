@@ -16,6 +16,16 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		DD5DA8902AF0F700005A6579 /* PetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5DA88F2AF0F700005A6579 /* PetModule.swift */; };
 		DD5DA8922AF0F741005A6579 /* PetModuleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5DA8912AF0F741005A6579 /* PetModuleHeader.m */; };
+		DD7E48662AF2453B0027FE3B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7E48652AF2453B0027FE3B /* WidgetKit.framework */; };
+		DD7E48682AF2453B0027FE3B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7E48672AF2453B0027FE3B /* SwiftUI.framework */; };
+		DD7E486B2AF2453B0027FE3B /* LivePetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E486A2AF2453B0027FE3B /* LivePetBundle.swift */; };
+		DD7E486D2AF2453B0027FE3B /* LivePetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E486C2AF2453B0027FE3B /* LivePetLiveActivity.swift */; };
+		DD7E486F2AF2453B0027FE3B /* LivePet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E486E2AF2453B0027FE3B /* LivePet.swift */; };
+		DD7E48722AF2453C0027FE3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7E48712AF2453C0027FE3B /* Assets.xcassets */; };
+		DD7E48742AF2453C0027FE3B /* LivePet.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DD7E48702AF2453B0027FE3B /* LivePet.intentdefinition */; };
+		DD7E48752AF2453C0027FE3B /* LivePet.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DD7E48702AF2453B0027FE3B /* LivePet.intentdefinition */; };
+		DD7E48782AF2453C0027FE3B /* LivePetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DD7E48642AF2453B0027FE3B /* LivePetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DD7E487D2AF246630027FE3B /* LivePetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E486C2AF2453B0027FE3B /* LivePetLiveActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +36,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = DynamicIsland;
 		};
+		DD7E48762AF2453C0027FE3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD7E48632AF2453B0027FE3B;
+			remoteInfo = LivePetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DD7E48792AF2453C0027FE3B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DD7E48782AF2453C0027FE3B /* LivePetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* DynamicIslandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicIslandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +79,15 @@
 		DD5DA88E2AF0F700005A6579 /* DynamicIsland-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicIsland-Bridging-Header.h"; sourceTree = "<group>"; };
 		DD5DA88F2AF0F700005A6579 /* PetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModule.swift; sourceTree = "<group>"; };
 		DD5DA8912AF0F741005A6579 /* PetModuleHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PetModuleHeader.m; sourceTree = "<group>"; };
+		DD7E48642AF2453B0027FE3B /* LivePetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LivePetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7E48652AF2453B0027FE3B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DD7E48672AF2453B0027FE3B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DD7E486A2AF2453B0027FE3B /* LivePetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePetBundle.swift; sourceTree = "<group>"; };
+		DD7E486C2AF2453B0027FE3B /* LivePetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePetLiveActivity.swift; sourceTree = "<group>"; };
+		DD7E486E2AF2453B0027FE3B /* LivePet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePet.swift; sourceTree = "<group>"; };
+		DD7E48702AF2453B0027FE3B /* LivePet.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LivePet.intentdefinition; sourceTree = "<group>"; };
+		DD7E48712AF2453C0027FE3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD7E48732AF2453C0027FE3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -65,6 +105,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-DynamicIsland.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7E48612AF2453B0027FE3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7E48682AF2453B0027FE3B /* SwiftUI.framework in Frameworks */,
+				DD7E48662AF2453B0027FE3B /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +159,8 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-DynamicIsland.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-DynamicIsland-DynamicIslandTests.a */,
+				DD7E48652AF2453B0027FE3B /* WidgetKit.framework */,
+				DD7E48672AF2453B0027FE3B /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +178,7 @@
 				13B07FAE1A68108700A75B9A /* DynamicIsland */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* DynamicIslandTests */,
+				DD7E48692AF2453B0027FE3B /* LivePet */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -141,6 +193,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* DynamicIsland.app */,
 				00E356EE1AD99517003FC87E /* DynamicIslandTests.xctest */,
+				DD7E48642AF2453B0027FE3B /* LivePetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +207,19 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-DynamicIsland-DynamicIslandTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD7E48692AF2453B0027FE3B /* LivePet */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E486A2AF2453B0027FE3B /* LivePetBundle.swift */,
+				DD7E486C2AF2453B0027FE3B /* LivePetLiveActivity.swift */,
+				DD7E486E2AF2453B0027FE3B /* LivePet.swift */,
+				DD7E48702AF2453B0027FE3B /* LivePet.intentdefinition */,
+				DD7E48712AF2453C0027FE3B /* Assets.xcassets */,
+				DD7E48732AF2453C0027FE3B /* Info.plist */,
+			);
+			path = LivePet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,15 +258,34 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				DD7E48792AF2453C0027FE3B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DD7E48772AF2453C0027FE3B /* PBXTargetDependency */,
 			);
 			name = DynamicIsland;
 			productName = DynamicIsland;
 			productReference = 13B07F961A680F5B00A75B9A /* DynamicIsland.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DD7E48632AF2453B0027FE3B /* LivePetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7E487C2AF2453C0027FE3B /* Build configuration list for PBXNativeTarget "LivePetExtension" */;
+			buildPhases = (
+				DD7E48602AF2453B0027FE3B /* Sources */,
+				DD7E48612AF2453B0027FE3B /* Frameworks */,
+				DD7E48622AF2453B0027FE3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LivePetExtension;
+			productName = LivePetExtension;
+			productReference = DD7E48642AF2453B0027FE3B /* LivePetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -209,6 +294,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -217,6 +303,9 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1430;
+					};
+					DD7E48632AF2453B0027FE3B = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
@@ -235,6 +324,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* DynamicIsland */,
 				00E356ED1AD99517003FC87E /* DynamicIslandTests */,
+				DD7E48632AF2453B0027FE3B /* LivePetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +343,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7E48622AF2453B0027FE3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7E48722AF2453C0027FE3B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,10 +519,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7E487D2AF246630027FE3B /* LivePetLiveActivity.swift in Sources */,
 				DD5DA8922AF0F741005A6579 /* PetModuleHeader.m in Sources */,
 				DD5DA8902AF0F700005A6579 /* PetModule.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				DD7E48752AF2453C0027FE3B /* LivePet.intentdefinition in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7E48602AF2453B0027FE3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7E486D2AF2453B0027FE3B /* LivePetLiveActivity.swift in Sources */,
+				DD7E486F2AF2453B0027FE3B /* LivePet.swift in Sources */,
+				DD7E48742AF2453C0027FE3B /* LivePet.intentdefinition in Sources */,
+				DD7E486B2AF2453B0027FE3B /* LivePetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +546,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* DynamicIsland */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		DD7E48772AF2453C0027FE3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD7E48632AF2453B0027FE3B /* LivePetExtension */;
+			targetProxy = DD7E48762AF2453C0027FE3B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -496,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-DynamicIsland.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -525,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-DynamicIsland.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -695,6 +813,87 @@
 			};
 			name = Release;
 		};
+		DD7E487A2AF2453C0027FE3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LivePet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LivePet;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.DynamicIsland.LivePet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD7E487B2AF2453C0027FE3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LivePet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LivePet;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.DynamicIsland.LivePet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -721,6 +920,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7E487C2AF2453C0027FE3B /* Build configuration list for PBXNativeTarget "LivePetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7E487A2AF2453C0027FE3B /* Debug */,
+				DD7E487B2AF2453C0027FE3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

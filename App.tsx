@@ -4,14 +4,23 @@ import {View, StyleSheet, Button, NativeModules} from 'react-native';
 const {Pet} = NativeModules;
 
 const App = () => {
-  const onPress = () => {
+  const onStart = () => {
     Pet.startActivity();
   };
+
+  function onEnd() {
+    Pet.endActivity();
+  }
+
+  function onUpdate() {
+    Pet.updateActivity('Updated activity');
+  }
+
   return (
     <View style={styles.root}>
-      <Button onPress={onPress} title="Start Activity" />
-      <Button title="Update Activity" />
-      <Button title="Stop Activity" />
+      <Button onPress={onStart} title="Start Activity" />
+      <Button onPress={onUpdate} title="Update Activity" />
+      <Button onPress={onEnd} title="Stop Activity" />
     </View>
   );
 };
