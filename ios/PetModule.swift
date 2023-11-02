@@ -7,6 +7,7 @@
 
 import Foundation
 import ActivityKit
+import SwiftUI
 
 @objc(Pet)
 class Pet: NSObject {

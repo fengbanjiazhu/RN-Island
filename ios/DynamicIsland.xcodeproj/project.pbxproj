@@ -26,6 +26,10 @@
 		DD7E48752AF2453C0027FE3B /* LivePet.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DD7E48702AF2453B0027FE3B /* LivePet.intentdefinition */; };
 		DD7E48782AF2453C0027FE3B /* LivePetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DD7E48642AF2453B0027FE3B /* LivePetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DD7E487D2AF246630027FE3B /* LivePetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E486C2AF2453B0027FE3B /* LivePetLiveActivity.swift */; };
+		DD7E48832AF39F780027FE3B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E48822AF39F780027FE3B /* Helpers.swift */; };
+		DD7E48892AF39FE60027FE3B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E48882AF39FE60027FE3B /* ContentViewModel.swift */; };
+		DD7E488B2AF39FF80027FE3B /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E488A2AF39FF80027FE3B /* PetModel.swift */; };
+		DD7E488D2AF3A01D0027FE3B /* PetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E488C2AF3A01D0027FE3B /* PetRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,10 @@
 		DD7E48702AF2453B0027FE3B /* LivePet.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LivePet.intentdefinition; sourceTree = "<group>"; };
 		DD7E48712AF2453C0027FE3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD7E48732AF2453C0027FE3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7E48822AF39F780027FE3B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		DD7E48882AF39FE60027FE3B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		DD7E488A2AF39FF80027FE3B /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
+		DD7E488C2AF3A01D0027FE3B /* PetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRepository.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -175,6 +183,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DD7E48842AF39F8B0027FE3B /* ContentView */,
+				DD7E48812AF39F5C0027FE3B /* Utils */,
 				13B07FAE1A68108700A75B9A /* DynamicIsland */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* DynamicIslandTests */,
@@ -220,6 +230,48 @@
 				DD7E48732AF2453C0027FE3B /* Info.plist */,
 			);
 			path = LivePet;
+			sourceTree = "<group>";
+		};
+		DD7E48812AF39F5C0027FE3B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E48822AF39F780027FE3B /* Helpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DD7E48842AF39F8B0027FE3B /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E48872AF39FBE0027FE3B /* Data */,
+				DD7E48862AF39FB80027FE3B /* Model */,
+				DD7E48852AF39FAF0027FE3B /* ViewModel */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		DD7E48852AF39FAF0027FE3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E48882AF39FE60027FE3B /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD7E48862AF39FB80027FE3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E488A2AF39FF80027FE3B /* PetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD7E48872AF39FBE0027FE3B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DD7E488C2AF3A01D0027FE3B /* PetRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,9 +571,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7E48892AF39FE60027FE3B /* ContentViewModel.swift in Sources */,
 				DD7E487D2AF246630027FE3B /* LivePetLiveActivity.swift in Sources */,
+				DD7E48832AF39F780027FE3B /* Helpers.swift in Sources */,
+				DD7E488D2AF3A01D0027FE3B /* PetRepository.swift in Sources */,
 				DD5DA8922AF0F741005A6579 /* PetModuleHeader.m in Sources */,
 				DD5DA8902AF0F700005A6579 /* PetModule.swift in Sources */,
+				DD7E488B2AF39FF80027FE3B /* PetModel.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				DD7E48752AF2453C0027FE3B /* LivePet.intentdefinition in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,

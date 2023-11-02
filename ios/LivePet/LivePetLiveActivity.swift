@@ -45,6 +45,7 @@ struct LivePetLiveActivity: Widget {
                 }
             } compactLeading: {
                 Text("L")
+                Image("quasire")
             } compactTrailing: {
                 Text("T")
             } minimal: {
